@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*
+    todo id em HTML é identificado nas CSS por # (usado apenas em um elemento)
+    toda class em HTML é identificada nas CSS por (.) (pode usar em vários elementos)
+    */
+
+body {
+    background-color: #AEEBF2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.principal {
+    text-align: center;
+    color: #035373;
+    background-color: #05AFF2;
+}
+
+.html {
+    color: #0D0D0D;
+}
+
+h2.básico {
+    color: #0378A6;
+}
+
+h2.intermediário {
+    color: #05AFF2;
+}
+
+h2.avançado {
+    color: #035373;
+}

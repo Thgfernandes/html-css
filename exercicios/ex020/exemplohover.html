@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+
+        /* Seletores Personalizados
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: rgb(149, 255, 255);
+            background-color: rgb(255, 91, 31);
+            width: 200px;
+        }
+
+        a {
+            color: rgb(0, 183, 255);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        a:hover {
+            color: darkgreen;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        a::after {
+            content: '[Link]';
+            text-decoration: none;
+            color: blue;
+        }
+
+        .especial {
+            background-color: aqua;
+        }
+
+        .especial::before {
+            content: '◊';
+        }
+
+        .especial::after {
+            content: '◊';
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+        <p>Passe o mouse no texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+    <p>TEXTO ESCONDIDO</p> 
+    </div>
+    <p>Fim do Exemplo</p>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" class="especial"> Repositório Github </a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>
