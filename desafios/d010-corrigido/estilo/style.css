@@ -27,7 +27,10 @@
 }
 
 body {
-    background-color: var(--cor0);
+    background-color: #d1fce2ad;
+    background-image: url('../imagens/android.png');
+    background-repeat: repeat;
+    background-size: 300px;   
     font-family: var(--fonte-padrao);    
 }
 
