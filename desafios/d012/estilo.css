@@ -14,32 +14,30 @@
     --fonte3: 'Sriracha', cursive;
 }
 
-body {
-    min-height: 100vh;
-    background-color: gray;
+html, body {
+    min-height: 100vh; /* tamanho minímo do corpo HTML, vai ser de  100% o tamanho da vh(view height), altura*/
+    background-color: darkgray;
     font-family: var(--fonte1);
 }
 
 header {
     background-image: url('imagens/campo-de-rosas.jpg');
-    background-position: center center;
-    min-height: 250px;
-    text-align: center;
-    padding-top: 40px;    
-    box-shadow: 3px 3px 6px black;
+    background-position: center center;    
+    text-align: center;   
+    color: white;      
 }
 
-h1 {
-    color: white;
+header h1 {    
     font-family: var(--fonte2);
+    padding-top: 50px;
+    margin-bottom: -15px;
     font-size: 10vw;  
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);           
+    font-variant: small-caps; /* Temos tds as letras em maíusculo, mas as primeiras letras são maiores*/
 }
 
-header p {
-    color: white;
-    font-family: var(--fonte1);
-    font-size: 1em;    
+header p {    
+    font-family: var(--fonte1);     
+    padding-bottom: 50px;   
 }
 
 a {
@@ -53,8 +51,8 @@ a:hover {
 }
 
 div {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 10vh; /* usado para que o conteúdo do site ganhe altura*/
+    padding-bottom: 10vh; /* usado para que o conteúdo do site ganhe altura*/
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
@@ -93,11 +91,11 @@ div#img2 {
 
 footer {
     background-color: rgb(26, 26, 26);
-    text-align: center;    
+    text-align: center; 
+    color: white;   
 }
 
-footer p {
-    color: white;
+footer p {    
     font-family: var(--fonte1);
     font-size: small;
     padding: 10px;    
