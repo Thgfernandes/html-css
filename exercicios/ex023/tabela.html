@@ -11,15 +11,21 @@
         }
 
         table {
-            border: 3px solid rgb(0, 255, 42);
+            border: 3px solid rgb(255, 0, 0);
             width: 400px;
-            border-collapse: collapse;        
-            box-shadow: 2px 2px 8px darkgrey;
+            border-collapse: collapse;
         }
 
         td {
+            height: 120px;
             border: 2px solid rgb(1, 52, 110);
             padding: 5px;
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: top; /*Alinhamento na vertical e ao centro*/
+        }
+
+        .numero {
+            text-align: right;
         }
 
         .linha1 {
@@ -27,8 +33,7 @@
         }
 
         .colunad {
-            background-color: darkorange;
-            height: 125px;
+            background-color: darkorange;            
         }
     </style>
 </head>
@@ -43,29 +48,29 @@
     -->
 
     <table>
-        <tr class="linha1"> <!--Primeira linha-->
+        <tr> <!--Primeira linha-->
             <td>A1</td> <!--Coluna-->
             <td>B1</td>
             <td>C1</td>
-            <td>D1</td>
+            <td class="colunad numero">D1</td>
         </tr>
         <tr> <!--Segunda linha-->
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
-            <td class="colunad">D2</td>
+            <td class="colunad numero">D2</td>
         </tr>
         <tr> <!--Terceira linha-->
             <td>A3</td>
             <td>B3</td>
             <td>C3</td>
-            <td class="colunad">D3</td>
+            <td class="colunad numero">D3</td>
         </tr>
         <tr> <!--Quarta linha-->
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
-            <td class="colunad">D4</td>
+            <td class="colunad numero">D4</td>
         </tr>
     </table>
 </body>
