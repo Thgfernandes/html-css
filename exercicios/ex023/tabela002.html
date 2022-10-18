@@ -13,6 +13,7 @@
         table {
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
 
         th, td {
@@ -24,6 +25,13 @@
             background-color: rgb(160, 160, 160);
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(160, 160, 160);
+        } /* configuração para fixar o cabeçalho em tabelas grandes. O cabeçalho vai descendo 
+            junto com a tabela conforme rolamos a página */
 
         .num {
             text-align: right;
@@ -245,7 +253,9 @@
                     <td></td>
                     <td class="num"><strong>210 147 125</strong></td>
                 </tr>
-        </tfoot>
+        </tfoot>      
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ducimus earum quae adipisci, deserunt molestiae mollitia minima, natus aspernatur harum iure rerum reiciendis iste. Molestias iure blanditiis soluta nam deserunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In cumque eius aut reprehenderit iusto ipsum numquam ratione quibusdam quis praesentium. Assumenda voluptate id ex consectetur at doloribus repellat accusantium vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum exercitationem beatae esse culpa voluptas nisi fugit nulla ab, dolorem nihil minus impedit maiores dolores consequuntur delectus illo veritatis sit provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reiciendis explicabo dignissimos ducimus aliquid esse quaerat minus corrupti beatae non. Quisquam ex dolor neque quod, id possimus ipsum nulla ipsam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis hic maxime qui vero dolorum! Aspernatur cum hic vitae similique est sapiente distinctio ducimus optio officia rerum nesciunt, animi beatae commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione adipisci velit ipsa voluptatum ipsam quibusdam distinctio explicabo. Voluptatibus repellat unde sit, ea minima dolor, doloribus nisi odit optio voluptate aliquid?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ducimus earum quae adipisci, deserunt molestiae mollitia minima, natus aspernatur harum iure rerum reiciendis iste. Molestias iure blanditiis soluta nam deserunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In cumque eius aut reprehenderit iusto ipsum numquam ratione quibusdam quis praesentium. Assumenda voluptate id ex consectetur at doloribus repellat accusantium vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum exercitationem beatae esse culpa voluptas nisi fugit nulla ab, dolorem nihil minus impedit maiores dolores consequuntur delectus illo veritatis sit provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reiciendis explicabo dignissimos ducimus aliquid esse quaerat minus corrupti beatae non. Quisquam ex dolor neque quod, id possimus ipsum nulla ipsam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis hic maxime qui vero dolorum! Aspernatur cum hic vitae similique est sapiente distinctio ducimus optio officia rerum nesciunt, animi beatae commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione adipisci velit ipsa voluptatum ipsam quibusdam distinctio explicabo. Voluptatibus repellat unde sit, ea minima dolor, doloribus nisi odit optio voluptate aliquid?</p>
 </body>
 </html>
