@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        thead {
+            font-weight: bold;
+            text-align: center;
+            background-color: lightslategray;
+            color: white;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cnome {
+            background-color: aqua;
+        }
+
+        col.cgrupo {
+            background-color: coral;
+        }
+
+        col.cprof {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupando Colunas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Idade</td>
+                <td>Sexo</td>
+                <td>Profissão</td>
+            </tr>
+        </thead>
+        <tr>
+            <td>Orlando</td>
+            <td>40</td>
+            <td>masculino</td>
+            <td>Bombeiro</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>31</td>
+            <td>Feminino</td>
+            <td>Dentista</td>
+        </tr>
+        <tr>
+            <td>Vanessa</td>
+            <td>35</td>
+            <td>Feminino</td>
+            <td>Arquiteta</td>
+        </tr>
+        <tr>
+            <td>Magali</td>
+            <td>39</td>
+            <td>Feminino</td>
+            <td>Engenheira</td>
+        </tr>
+        <tr>
+            <td>Fabiano</td>
+            <td>35</td>
+            <td>Masculino</td>
+            <td>Motorista</td>
+        </tr>
+        <tr>
+            <td>Antonio</td>
+            <td>43</td>
+            <td>Masculino</td>
+            <td>Fotográfo</td>
+        </tr>
+    </table>
+</body>
+</html>
