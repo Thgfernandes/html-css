@@ -5,12 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe</title>
+    <style>
+        iframe {
+            width: 500px;
+            height: 250px;
+            border: 10px solid lightgreen;
+        }
+    </style>
 </head>
 <body>
     <h1>Usando iframes</h1>
     <p>Acessando o site do 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0">        
+        <!--O iframe por padrão tem 300x150-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="300px" scolling="no"> 
+             <!-- scolling é usado para bloquear a barra de rolagem do conteúdo do iframe -->      
         </iframe> para aprender a programar
+    </p>
+    <p>
+        Visite o site da investing
+
+        <iframe src="https://br.investing.com/economic-calendar" frameborder="1">
+            <a href="https://br.investing.com/economic-calendar/" target="_blank"></a> <!--caso o navegador
+            não for compatível como iframe usamos essa alternativa-->
+        </iframe>
+        para analisar o mercado financeiro!
     </p>
 </body>
 </html>
